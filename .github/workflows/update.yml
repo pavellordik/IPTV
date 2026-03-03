@@ -1,0 +1,83 @@
+name: Clean and Upload Playlists
+
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install yadisk
+
+      - name: Download all playlists
+        run: |
+          curl -L -o 10.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/10.m3u8
+          curl -L -o 11.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/11.m3u8
+          curl -L -o 2.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/2.m3u8
+          curl -L -o 20TV.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/20TV.m3u8
+          curl -L -o 3.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/3.m3u8
+          curl -L -o 4.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/4.m3u8
+          curl -L -o 5.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/5.m3u8
+          curl -L -o 6.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/6.m3u8
+          curl -L -o 7.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/7.m3u8
+          curl -L -o 8.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/8.m3u8
+          curl -L -o 9.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/9.m3u8
+          curl -L -o fil_mobai.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/fil_mobai.m3u8
+          curl -L -o seri_mobai.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/seri_mobai.m3u8
+          curl -L -o staray_seria.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/staray_seria.m3u8
+
+      - name: Clean playlists
+        run: |
+          python clean_playlist.py 10.m3u8 10_clean.m3u8
+          python clean_playlist.py 11.m3u8 11_clean.m3u8
+          python clean_playlist.py 2.m3u8 2_clean.m3u8
+          python clean_playlist.py 20TV.m3u8 20TV_clean.m3u8
+          python clean_playlist.py 3.m3u8 3_clean.m3u8
+          python clean_playlist.py 4.m3u8 4_clean.m3u8
+          python clean_playlist.py 5.m3u8 5_clean.m3u8
+          python clean_playlist.py 6.m3u8 6_clean.m3u8
+          python clean_playlist.py 7.m3u8 7_clean.m3u8
+          python clean_playlist.py 8.m3u8 8_clean.m3u8
+          python clean_playlist.py 9.m3u8 9_clean.m3u8
+          python clean_playlist.py fil_mobai.m3u8 fil_mobai_clean.m3u8
+          python clean_playlist.py seri_mobai.m3u8 seri_mobai_clean.m3u8
+          python clean_playlist.py staray_seria.m3u8 staray_seria_clean.m3u8
+
+      - name: Upload to Yandex Disk
+        env:
+          YANDEX_TOKEN: ${{ secrets.YANDEX_DISK_TOKEN }}
+        run: |
+          python -c "
+import os
+from yadisk import YaDisk
+
+y = YaDisk(token=os.environ['YANDEX_TOKEN'])
+target_dir = '/Приложения/teleplaylists'
+
+if not y.exists(target_dir):
+    y.mkdir(target_dir)
+
+files = [
+    '10_clean.m3u8', '11_clean.m3u8', '2_clean.m3u8', '20TV_clean.m3u8',
+    '3_clean.m3u8', '4_clean.m3u8', '5_clean.m3u8', '6_clean.m3u8',
+    '7_clean.m3u8', '8_clean.m3u8', '9_clean.m3u8', 'fil_mobai_clean.m3u8',
+    'seri_mobai_clean.m3u8', 'staray_seria_clean.m3u8'
+]
+
+for file in files:
+    if os.path.exists(file):
+        y.upload(file, f'{target_dir}/{file}', overwrite=True)
+        print(f'Uploaded {file}')
+          "
