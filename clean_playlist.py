@@ -1,6 +1,12 @@
 import sys
 
-ADS_KEYWORDS = ['реклама', 'advert', 'promo', 'shop', 'tvclub', 'телебар', 'казино', 'еротика']
+# Расширенный список слов для определения рекламы
+ADS_KEYWORDS = [
+    'реклама', 'advert', 'promo', 'shop', 'tvclub', 'телебар', 'казино', 'еротика',
+    'ватсап', 'whatsapp', 'макс', 'max', 'связь с разработчиком', 'поддержка',
+    'telegram', 'telergam', 'реклама', 'промо', 'магазин', 'tv club', 'телеграм',
+    'казино', 'клубничка', 'для взрослых', 'эротика', '18+', 'чат', 'подпишись'
+]
 
 def clean_playlist(input_file, output_file):
     try:
@@ -15,8 +21,11 @@ def clean_playlist(input_file, output_file):
 
     for line in lines:
         if line.startswith('#EXTINF:'):
-            if any(keyword in line.lower() for keyword in ADS_KEYWORDS):
+            # Приводим строку к нижнему регистру для проверки
+            lower_line = line.lower()
+            if any(keyword in lower_line for keyword in ADS_KEYWORDS):
                 skip = True
+                print(f"Пропущен рекламный канал: {line.strip()}")
             else:
                 skip = False
                 cleaned_lines.append(line)
@@ -27,7 +36,7 @@ def clean_playlist(input_file, output_file):
 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.writelines(cleaned_lines)
-    print(f"Обработан {input_file} -> {output_file}")
+    print(f"Обработан {input_file} -> {output_file} (сохранено {len(cleaned_lines)} строк)")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
