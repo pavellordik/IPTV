@@ -1,16 +1,29 @@
 import sys
 
-# Расширенный список слов для определения рекламы
+# Список ключевых слов для рекламы (в нижнем регистре)
 ADS_KEYWORDS = [
-    'НАПИСАТЬ РАЗРАБОТЧИКУ', 'whatsapp', 'связь с разработчиком',
+    'НАПИСАТЬ РАЗРАБОТЧИКУ',
+    'whatsapp',
+    'связь с разработчиком'
 ]
+
+def read_file_with_encoding(file_path):
+    """Пытается прочитать файл в разных кодировках."""
+    encodings = ['utf-8', 'cp1251', 'latin-1', 'utf-8-sig']
+    for enc in encodings:
+        try:
+            with open(file_path, 'r', encoding=enc) as f:
+                return f.readlines(), enc
+        except UnicodeDecodeError:
+            continue
+    raise UnicodeDecodeError(f"Не удалось прочитать файл {file_path} ни в одной из кодировок: {encodings}")
 
 def clean_playlist(input_file, output_file):
     try:
-        with open(input_file, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-    except FileNotFoundError:
-        print(f"Ошибка: файл {input_file} не найден.")
+        lines, used_encoding = read_file_with_encoding(input_file)
+        print(f"Файл {input_file} прочитан в кодировке {used_encoding}")
+    except Exception as e:
+        print(f"Ошибка чтения файла {input_file}: {e}")
         return
 
     cleaned_lines = []
@@ -18,7 +31,6 @@ def clean_playlist(input_file, output_file):
 
     for line in lines:
         if line.startswith('#EXTINF:'):
-            # Приводим строку к нижнему регистру для проверки
             lower_line = line.lower()
             if any(keyword in lower_line for keyword in ADS_KEYWORDS):
                 skip = True
