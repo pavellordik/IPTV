@@ -2,8 +2,7 @@ import sys
 
 # Расширенный список слов для определения рекламы
 ADS_KEYWORDS = [
-    'ватсап', 'whatsapp', 'макс', 'max', 'связь с разработчиком', 'поддержка',
-    'telegram', 'telergam',
+    'Написать разработчику', 'whatsapp', 'связь с разработчиком', ,
 ]
 
 def clean_playlist(input_file, output_file):
