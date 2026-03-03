@@ -55,7 +55,7 @@ jobs:
           python clean_playlist.py seri_mobai.m3u8 seri_mobai_clean.m3u8
           python clean_playlist.py staray_seria.m3u8 staray_seria_clean.m3u8
 
-       - name: Upload to Yandex Disk
+      - name: Upload to Yandex Disk
         env:
           YANDEX_TOKEN: ${{ secrets.YANDEX_DISK_TOKEN }}
         run: python upload.py
