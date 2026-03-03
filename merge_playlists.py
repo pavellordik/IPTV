@@ -1,30 +1,30 @@
 import sys
-import glob
+import os
 
-def merge_playlists(input_pattern, output_file):
-    # Получаем список всех файлов по шаблону (например, *_clean.m3u8)
-    files = sorted(glob.glob(input_pattern))
-    if not files:
-        print(f"Нет файлов по шаблону {input_pattern}")
-        return
-
+def merge_files(input_files, output_file):
     with open(output_file, 'w', encoding='utf-8') as out:
-        for i, file in enumerate(files):
-            with open(file, 'r', encoding='utf-8') as f:
+        first_file = True
+        for fname in input_files:
+            if not os.path.exists(fname):
+                print(f"⚠️ Предупреждение: файл {fname} не найден, пропускаем.")
+                continue
+            with open(fname, 'r', encoding='utf-8') as f:
                 lines = f.readlines()
-                # Для первого файла записываем всё, включая #EXTM3U
-                if i == 0:
+                if first_file:
                     out.writelines(lines)
+                    first_file = False
                 else:
-                    # Для последующих пропускаем первую строку (#EXTM3U), если она есть
+                    # Пропускаем первую строку, если это #EXTM3U
                     if lines and lines[0].startswith('#EXTM3U'):
                         out.writelines(lines[1:])
                     else:
                         out.writelines(lines)
-    print(f"Объединённый файл {output_file} создан из {len(files)} файлов.")
+            print(f"➕ Добавлен {fname}")
+    print(f"✅ Создан {output_file}")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Использование: python merge_playlists.py <входной_шаблон> <выходной_файл>")
+    if len(sys.argv) < 3:
+        print("Использование: python merge_categories.py <входной1> <входной2> ... <выходной>")
         sys.exit(1)
-    merge_playlists(sys.argv[1], sys.argv[2])
+    *inputs, output = sys.argv[1:]
+    merge_files(inputs, output)
