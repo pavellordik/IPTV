@@ -4,8 +4,9 @@ from yadisk import YaDisk
 y = YaDisk(token=os.environ['YANDEX_TOKEN'])
 target_dir = '/Приложения/teleplaylists'
 
-# Создаём все папки по пути, если их нет
-y.makedirs(target_dir, exist_ok=True)
+# Проверяем, существует ли папка, и создаём, если нет
+if not y.exists(target_dir):
+    y.mkdir(target_dir)
 
 files = [
     '10_clean.m3u8', '11_clean.m3u8', '2_clean.m3u8', '20TV_clean.m3u8',
