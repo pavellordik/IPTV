@@ -4,11 +4,19 @@ import sys
 ADS_KEYWORDS = [
     'написать разработчику',
     'whatsapp',
-    'whats app',
-    'what`s app',
     'связь с разработчиком',
-    'разработчик',      # любое упоминание разработчика
-    'whats',            # часть слова WhatsApp в любом написании
+    'разработчик',
+    'whats',
+    'ватсап',
+    'макс',
+    'max',
+    'поддержка',
+    'telegram',
+    'telergam',
+    'чат',
+    'подпишись',
+    '18+',
+    'клубничка'
 ]
 
 def read_file_with_encoding(file_path):
