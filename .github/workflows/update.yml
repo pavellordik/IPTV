@@ -58,6 +58,14 @@ jobs:
       - name: Merge all clean playlists
         run: python merge_playlists.py "*_clean.m3u8" "all_clean.m3u8"
 
+      - name: Commit all_clean.m3u8 to repository
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add all_clean.m3u8
+          git commit -m "Update all_clean.m3u8 [skip ci]" || exit 0
+          git push
+
       - name: Upload to Yandex Disk
         env:
           YANDEX_TOKEN: ${{ secrets.YANDEX_DISK_TOKEN }}
