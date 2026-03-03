@@ -23,49 +23,70 @@ jobs:
       - name: Install dependencies
         run: pip install yadisk requests
 
-      - name: Download all playlists
+      - name: Download all playlists (with existence check)
         run: |
-          curl -L -o 10.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/10.m3u8
-          curl -L -o 11.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/11.m3u8
-          curl -L -o 2.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/2.m3u8
-          curl -L -o 20TV.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/20TV.m3u8
-          curl -L -o 3.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/3.m3u8
-          curl -L -o 4.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/4.m3u8
-          curl -L -o 5.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/5.m3u8
-          curl -L -o 6.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/6.m3u8
-          curl -L -o 7.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/7.m3u8
-          curl -L -o 8.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/8.m3u8
-          curl -L -o 9.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/9.m3u8
-          curl -L -o fil_mobai.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/fil_mobai.m3u8
-          curl -L -o seri_mobai.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/seri_mobai.m3u8
-          curl -L -o staray_seria.m3u8 https://raw.githubusercontent.com/TomichekTV/Tomichek/main/staray_seria.m3u8
+          # Функция для безопасного скачивания
+          safe_download() {
+            local url="$1"
+            local output="$2"
+            if curl --head --fail --silent "$url" > /dev/null; then
+              curl -L -o "$output" "$url"
+              echo "✅ Скачан: $output"
+            else
+              echo "⚠️ Файл не найден (404): $url — пропускаем"
+            fi
+          }
 
-      - name: Clean playlists
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/2.m3u8" "КАНАЛЫ ПРЕМИУМ.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/20TV.m3u8" "20TVХАБАРОВСКИЕ.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/3.m3u8" "ФИЛЬМЫ HD.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/4.m3u8" "МУЛЬТФИЛЬМЫ.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/5.m3u8" "сериалы HD.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/6.m3u8" "4K.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/7.m3u8" "ФОРСАЖ все части.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/8.m3u8" "американский пирог все части.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/9.m3u8" "4к.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/fil_mobai.m3u8" "fil_mobai.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/seri_mobai.m3u8" "seri_mobai.m3u8"
+          safe_download "https://raw.githubusercontent.com/TomichekTV/Tomichek/main/staray_seria.m3u8" "staray_seria.m3u8"
+
+      - name: Clean all playlists
         run: |
-          python clean_playlist.py 10.m3u8 10_clean.m3u8
-          python clean_playlist.py 11.m3u8 11_clean.m3u8
-          python clean_playlist.py 2.m3u8 2_clean.m3u8
-          python clean_playlist.py 20TV.m3u8 20TV_clean.m3u8
-          python clean_playlist.py 3.m3u8 3_clean.m3u8
-          python clean_playlist.py 4.m3u8 4_clean.m3u8
-          python clean_playlist.py 5.m3u8 5_clean.m3u8
-          python clean_playlist.py 6.m3u8 6_clean.m3u8
-          python clean_playlist.py 7.m3u8 7_clean.m3u8
-          python clean_playlist.py 8.m3u8 8_clean.m3u8
-          python clean_playlist.py 9.m3u8 9_clean.m3u8
-          python clean_playlist.py fil_mobai.m3u8 fil_mobai_clean.m3u8
-          python clean_playlist.py seri_mobai.m3u8 seri_mobai_clean.m3u8
-          python clean_playlist.py staray_seria.m3u8 staray_seria_clean.m3u8
+          for file in *.m3u8; do
+            python clean_playlist.py "$file" "${file%.*}_clean.m3u8"
+          done
 
-      - name: Merge all clean playlists
-        run: python merge_playlists.py "*_clean.m3u8" "all_clean.m3u8"
+      - name: Merge categories
+        run: |
+          # Телеканалы
+          python merge_categories.py "КАНАЛЫ ПРЕМИУМ_clean.m3u8" "20TVХАБАРОВСКИЕ_clean.m3u8" "Телеканалы.m3u8"
+          # Фильмы
+          python merge_categories.py "ФИЛЬМЫ HD_clean.m3u8" "ФОРСАЖ все части_clean.m3u8" "американский пирог все части_clean.m3u8" "Фильмы.m3u8"
+          # Сериалы
+          if [ -f "сериалы HD_clean.m3u8" ]; then
+            cp "сериалы HD_clean.m3u8" "Сериалы.m3u8"
+          else
+            echo "⚠️ Файл сериалы HD_clean.m3u8 не найден, создаём пустой?"
+          fi
+          # 4К
+          python merge_categories.py "4K_clean.m3u8" "4к_clean.m3u8" "4К.m3u8"
+          # Мультфильмы
+          if [ -f "МУЛЬТФИЛЬМЫ_clean.m3u8" ]; then
+            cp "МУЛЬТФИЛЬМЫ_clean.m3u8" "Мультфильмы.m3u8"
+          fi
+          # Отдельные файлы (просто переименовываем, убирая _clean)
+          for f in fil_mobai seri_mobai staray_seria; do
+            if [ -f "${f}_clean.m3u8" ]; then
+              mv "${f}_clean.m3u8" "${f}.m3u8"
+            fi
+          done
 
-      - name: Commit all_clean.m3u8 to repository
+      - name: Commit final playlists to repository
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add all_clean.m3u8
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update all_clean.m3u8 [skip ci]"
+          git add Телеканалы.m3u8 Фильмы.m3u8 Сериалы.m3u8 4К.m3u8 Мультфильмы.m3u8 fil_mobai.m3u8 seri_mobai.m3u8 staray_seria.m3u8 2>/dev/null || true
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update category playlists [skip ci]"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
 
       - name: Upload to Yandex Disk
