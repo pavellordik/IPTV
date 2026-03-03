@@ -19,7 +19,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install yadisk
+        run: pip install yadisk requests
 
       - name: Download all playlists
         run: |
