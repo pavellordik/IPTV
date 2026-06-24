@@ -6,7 +6,7 @@
 
 #EXTINF:-1 tvg-logo="https://dl.dropbox.com/scl/fi/98p4a98msi9xw9fyd1b87/mult-2.png?rlkey=f78pbieptkjs1wrwyexmcowxv" group-title="TV-PREMIUM",Мульт HD
 
-#EXTINF:-1 tvg-logo="https://i127.fastpic.org/big/2026/0608/ce/6d7a1a5c8d18b0a28e7cfbd3f6849fce.png" group-title="TV-PREMIUM",Первый FHD (+7)
+#EXTINF:-1 tvg-logo="https://i127.fastpic.org/big/2026/0608/ce/6d7a1a5c8d18b0a28e7cfbd3f6849fce.png" group-title="TV-PREMIUM",Первый FHD
 http://levshanov.tlkf.ru/live/view11.php?name_id=1TV_hd&token=T2xlZzIxNTI2OldPUkxELVNPQ0hJ&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://dl.dropbox.com/scl/fi/em22h47vmv4mmf6wlfsfj/russia_1.png?rlkey=ozsznjm7n6237agnfzc636d8x" group-title="TV-PREMIUM",Россия 1 FHD (+7)
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/7/russia1-hd/index.m3u8
@@ -591,7 +591,7 @@ https://cdngw.ott.tricolor.tv/streamingGateway/GetLivePlayList?source=1TV_hd.m3u
 https://s97982.cdn.ngenix.net/hls/CH_R27_OTT_DV_HVSK_GUBERNYA/variant.m3u8
 #EXTINF:-1 catchup="append" catchup-days="7" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="pervy-pl7" tvg-logo="https://i127.fastpic.org/big/2026/0608/1b/777d0bc117a0ac69527465a6624ba11b.png" group-title="ТЕЛЕКАНАЛЫ HD-FHD",Первый канал (+7)
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
-https://zabava-htlive.cdn.ngenix.net/hls/CH_1TVSD/variant.m3u8
+http://185.221.213.254/live/stream113.php?seg=9xlA-fS6Rgaoabk-0t2EwILVRFc235tUNU9DRXJKAXWJpW0p29gVwUEqqnuiCcUs-CbthoHquhCu6Ghy4vH2Cw&token=T2xlZzIxNTI2OldPUkxELVNPQ0hJ&|User-Agent=1/.index.m3u8
 #EXTINF:-1 catchup="append" catchup-days="7" catchup-source="?offset=-${offset}&utcstart=${timestamp}" tvg-id="rossia1-pl7" tvg-logo="https://dl.dropbox.com/scl/fi/rmi83n77s3dudb6m04bld/Ru-1.png?rlkey=2pzjqobfyal4wst8elalrhs52&dl=0" group-title="ТЕЛЕКАНАЛЫ HD-FHD",Россия 1 HD (+7)
 #EXTVLCOPT:http-user-agent=WINK/RT_(Android_TV/11)_WinkPlayer_AppleWebKit/537.36
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/7/russia1-hd/index.m3u8
