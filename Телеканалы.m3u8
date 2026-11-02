@@ -1,13 +1,13 @@
 #EXTM3U
 
-#EXTINF:-1 group-title="TV-PREMIUM" tvg-logo="https://dl.dropbox.com/scl/fi/a3c73bpb89gdypt4j9sgf/net_geo_wild.jpg?rlkey=gejibve3x7cny24ew0ijm6z71",Nat Geo Wild HD
-
-#EXTINF:-1 group-title="TV-PREMIUM" tvg-logo="https://dl.dropbox.com/scl/fi/ayj2w482fegboifz2v4r8/Discover_2026.jpg?rlkey=ibh17wljnixowr32j4rxyjm76",Discovery Channel HD
-
-#EXTINF:-1 tvg-logo="https://dl.dropbox.com/scl/fi/98p4a98msi9xw9fyd1b87/mult-2.png?rlkey=f78pbieptkjs1wrwyexmcowxv" group-title="TV-PREMIUM",Мульт HD
-
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/bcdf4fc9-f84d-4ab9-863c-f22b72e5e011/" group-title="TV-PREMIUM",Смешарики
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfZjCXxjOT4twKUJnlOKWytg&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
+#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/53388f49-7b38-4fd6-8e33-482b8c93dfc8/" group-title="TV-PREMIUM",Кино ТВ HD
+http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf1PjDYfrpFuKSLwWHDq4S-g&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
+#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/02bb6c44-7d09-46d8-8341-5d428b407f80/" group-title="TV-PREMIUM",Мультсериал Простоквашино
+http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfyoLm74vIpIaNT9M0urq-6A&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
+#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/5281f9e0-27e8-45fc-8083-5b41a4929e2d/" group-title="TV-PREMIUM",Дорама
+http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfc2cKSX3V-Djgcl6z76AAXQ&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/a9704fe2-30e3-480f-8311-36378a024ddb/" group-title="TV-PREMIUM",VHS-ка
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfoEqGtKrGrEFra1p_yh-9tQ&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/64a2afda-5c88-41c1-a624-97ad7b226e27/" group-title="TV-PREMIUM",VHS-ка сериал
@@ -203,8 +203,6 @@ http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83Q
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfh_Zy7h-dZJSHyQPbyTGolFj9LsL2Nh_U-OhW4d-8cas&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/22997b1d-f3cf-4d2c-a776-c9e857ee05cd/" group-title="TV-PREMIUM",MAXIMUM
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf3CPhAU678iYFVIvxT4Zhew&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ottgoods.ru/media/v2/67a7714c-194e-4888-a96a-4f0492010811/" group-title="TV-PREMIUM",Рыжий
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfk84BxmQcda0ixxK0IiHBLA&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/f2730edc-deaf-4943-8897-1c4e63bd2edc/" group-title="TV-PREMIUM",Загородный
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfcvQuCKU-TID98ZNC7dXdcg&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/29598100-5357-44ee-bd6e-d4bc08589d2e/" group-title="TV-PREMIUM",Первый Космический HD
@@ -247,8 +245,6 @@ http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83Q
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf6Rcux_lDYV7YJXeCdinLqw&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/f51b2bd6-00a5-40e1-bb85-d359c6bd7835/" group-title="TV-PREMIUM",Зоо ТВ
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfKxcVbANzbX8mnbAH-ogCrw&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/12f40875-3dc5-4760-9f54-bab492a0f8e1/" group-title="TV-PREMIUM",Gulli Girl
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf-GwxuVb83w51wLqRpQMJgw&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/28142cd3-3a63-4574-bf05-c88d3f37f512/" group-title="TV-PREMIUM",Радио Родных Дорог
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfVrJrWIAwT61oF5AFZ8a3IgZvlSLTrv1DmAuJ_Mxur_Y&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/2179869e-8f36-4338-aae0-c10ad58cd827/" group-title="TV-PREMIUM",Дорожное радио
@@ -319,8 +315,6 @@ http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83Q
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfkMzI5Ot7QFL_UI8x8_SlCRZx9bKPXgLU0Yi0UMkzus4&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/686a6862-fbe0-4681-9886-2f8bce14b612/" group-title="TV-PREMIUM",Юрган
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfL9BcICHImQu_D3gZKefVHw&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/5281f9e0-27e8-45fc-8083-5b41a4929e2d/" group-title="TV-PREMIUM",Дорама
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfc2cKSX3V-Djgcl6z76AAXQ&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/23e597d6-c25d-48a7-a4b3-ae482422bc31/" group-title="TV-PREMIUM",Романтичное HD
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfmyGX_Wb7jPoo6yQtYf3XCWsWxF6LwMCx2a-iOyaIxro&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/62bc2825-e940-4761-b445-31c084a177f1/" group-title="TV-PREMIUM",FAN HD
@@ -333,18 +327,10 @@ http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83Q
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf3ISMgh3oSiR8VVAkjCQfKg&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/875b1fa3-6209-471a-b757-3fa8c729f3d6/" group-title="TV-PREMIUM",Комедия
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfFz0Kmj8JB9-9NvmFrj8-4A&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/53388f49-7b38-4fd6-8e33-482b8c93dfc8/" group-title="TV-PREMIUM",Кино ТВ HD
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf1PjDYfrpFuKSLwWHDq4S-g&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/d0e0cc99-05d8-40b3-8124-fe3ebd96a0d6/" group-title="TV-PREMIUM",Губерния
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf19k9SuhKF9UGUfAmkOgxOw&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/5d7752b9-9cad-4435-90f6-056376dbd032/" group-title="TV-PREMIUM",АОТВ
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfV7iU3cEUja2eCxTjKRWr7Q&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/f056e675-39e6-404b-9492-4668bb5491cd/" group-title="TV-PREMIUM",ПОБЕДА
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfrXf_ojCYkB_sDpArci4MGQ&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/f4ba5ecf-bfc6-49a3-ab64-2e8559825aad/" group-title="TV-PREMIUM",НВК Саха
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf3H8O09Dg_Jns_DBM6BaP3A&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/a6b82255-0e39-4391-bb6d-cb0c9a4478c8/" group-title="TV-PREMIUM",Волгоград 24
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfn1PN2ybilMR3AJeAnyB_CRIrxg-bz8eXXHiMJn9sxSI&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/b577f65b-aedc-44c8-bfc8-0fe24a2c5e93/" group-title="TV-PREMIUM",Наша Тема
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf0iE32mbyB1Gq-sLe9uxe0Q&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/9ab16736-c3e8-4ff4-ad53-230ce0dde125/" group-title="TV-PREMIUM",Загородный Int HD
@@ -421,10 +407,6 @@ http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83Q
 http://185.221.213.254/live/streamTr.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp1Hr4RkYXbuVctkSncnj6Ca2MNgTIcciZllW17WT2nT5Q&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/7f6fe619-3785-4453-8e73-c83ff0d4297f/" group-title="TV-PREMIUM",Живи активно
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf7M0qFjvIWx_MfaC3L5H1AUmrkaCTfKpsISTS4Tu0rXQ&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/21247259-6fc6-4018-985d-34e3003ea8a6/" group-title="TV-PREMIUM",ТипТоп HD
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfThtyW8GHZyNguMKG2BIm1Q&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/3ba21f2c-cb99-4df1-b2cb-bd114c92f938/" group-title="TV-PREMIUM",Чижик HD
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfoU64-nAR3gsV0sfUp3JmRA&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/ded80bfa-0e92-4c85-913a-315acf663b18/" group-title="TV-PREMIUM",Калейдоскоп ТВ
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfC-XdmSOo12agFK5I6llC0g&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/cff8ff69-2409-4940-ab45-b940f8413657/" group-title="TV-PREMIUM",Криминальное HD
@@ -459,12 +441,8 @@ http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83Q
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfPS8ViR3ofUcpZpDIaJJWpg&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/56545935-a4a6-4423-ba34-d8e651cb1636/" group-title="TV-PREMIUM",Ювелирочка HD
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf9qqaZgpa2WmPgFbhROS5jk5dnrDABWKXdQEmfrS0yXQ&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/fc0304aa-94ab-459a-995a-c95bdc085c5e/" group-title="TV-PREMIUM",24KZ
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfUd0BPXlXH9Jk6FIlZYCL_Q&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/8fccd7d0-a9b0-4e30-afc2-e5061b37c90d/" group-title="TV-PREMIUM",ГТРК Вайнах
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfLKrsUeYC4TKpnA9_m6_alg&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/5821461c-1712-4271-a342-57c4390fad01/" group-title="TV-PREMIUM",КиноМульт
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfBsUmvCUzAkwKZ_8qkI_Kvg&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/87a0e3af-c2e5-4053-a18d-c320d2b85fe5/" group-title="TV-PREMIUM",Silk Way
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfDqgAXz2NlBw-W43Up_aVJQ&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/54d5cf73-e7b3-42f0-ac59-73bbeb1c6339/" group-title="TV-PREMIUM",ЯПервый
@@ -501,8 +479,6 @@ http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83Q
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfgdMPMkjTxqN9TSJnxhgFSg&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/e38d12b8-cd19-4cc3-bfd2-482c7da1f2da/" group-title="TV-PREMIUM",Будет страшно!
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMf265WRNHNpbXUEwPdIspgXw&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-#EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/02bb6c44-7d09-46d8-8341-5d428b407f80/" group-title="TV-PREMIUM",Мультсериал "Простоквашино"
-http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfyoLm74vIpIaNT9M0urq-6A&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/470cdc0b-1869-4904-9e94-d63676c704f0/" group-title="TV-PREMIUM",Жизнь в деревне
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfsqiXo6Zlj5UdsavAJ_8LKA&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/d2acd1ab-907f-4cfd-b7e6-bdb37d03258b/" group-title="TV-PREMIUM",Исторический
@@ -565,25 +541,6 @@ http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83Q
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfftpQnbXNNw-RlPIAqurSS6sF6KwUhUMQcC7HjXhO3x4&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
 #EXTINF:-1 tvg-logo="https://cs1.ott.tricolor.tv/media/v2/4cf56766-0525-4494-958a-20859fff97a2/" group-title="TV-PREMIUM",BRIDGE ROCK
 http://185.221.213.254/live/stream7.php?q=h0c5Eyuek0CppzJQmzPiyAsK9mjR21akFPz83QYGWp0zp6dXZwy0kI8VMPt01PMfAG9mytVKGO1KJeHyDUvoWvwJKWFNUrYFIlLlMAfJUTo&token=dGVzdDU6dGVzdDU=&|User-Agent=1/.index.m3u8
-
-
-
-
-
-
-
-
-
-
-
-#EXTINF:-1 tvg-logo="https://dl.dropbox.com/scl/fi/whv20o8k1lwk9km2mn9uk/TOMNetFLX.png?rlkey=9yjiirf15oqr05f33wlz5edkc" group-title="TV-PREMIUM",MARVEL HD
-
-#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/e0se9pmng2x9m2d/Radio_Record_HD.png" group-title="TV-PREMIUM",Radio Record (Music)
-https://hls-01-radiorecord.hostingradio.ru/record/96/playlist.m3u8
-#EXTINF:-1 tvg-logo="http://img.smotreshka.tv:80/image/aHR0cDovL2ltZy5iNjEyLnRpZ2h0dmlkZW8uY29tL2NoYW5uZWxzL21pcmhkLnBuZw==" group-title="TV-PREMIUM",Мир HD
-http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://dl.dropbox.com/scl/fi/hfhwb666q172rtjszwur7/ru-tv_2.jpg?rlkey=u7x21x1hi084uw75kt4vf63a8" group-title="TV-PREMIUM",RU (тех.работы)
-http://cdngw.ott.tricolor.tv/streamingGateway/GetLivePlayList?source=1TV_hd.m3u8&drmreq=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfdHlwZSI6ImFwdHBfb3R0IiwiY2xhc3MiOiJCUk9XU0VSIiwiZHJlaWQiOiJ0bXBfYzQ5Yjk0N2JhZTA5MTEyZDc4ZTE4M2U2YTM4NjUxNjgiLCJleHAiOjE3NTk0NTU5MDcsImh3aWQiOiI5MzBkMWI5YWNkMWJjN2UzYTI2N2QyYjkzYjI1NTVlMjdjNWYzMGE3YzI1NTc3NWVjZTUxNGI0ZDNhMzAzNjk3IiwibGFzdF9yZXFfZGF0ZSI6MTc1ODg1MTEwNywic2Vzc2lvbl9pZCI6ImFjZTQyZGRmNDNmYzRmZWJiM2MxOWE3ODljNzUxYjIyIiwidG9rZW5fdHlwZSI6IkNvbnRlbnRBY2Nlc3NUb2tlbiIsInR5cGUiOiJNT1pJTExBIn0.cA2qPAisFww--fz9JaIT4GmS4Gn1XoMXS0C2NyZazqI&amp;index=1&amp;play/plst.m3u8
 
 
 #EXTINF:-1 group-title="ТЕЛЕКАНАЛЫ HD-FHD" tvg-logo="https://i127.fastpic.org/big/2026/0608/1b/777d0bc117a0ac69527465a6624ba11b.png",Первый канал (+7)
